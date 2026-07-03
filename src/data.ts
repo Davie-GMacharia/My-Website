@@ -2,13 +2,13 @@ import { Certificate, Skill, Project } from './types';
 
 export const personalInfo = {
   name: "David Macharia",
-  title: "Full Stack Developer & Network Engineer",
+  title: "Full Stack & Mobile Developer | Network Engineer",
   subtitle: "Computer Science Student @ Murang'a University of Technology",
   email: "davidmacharia692@gmail.com",
   phone: "+254706827318",
   location: "Murang'a, Kenya",
   avatarUrl: "/src/assets/images/david_profile_neon_1783061282564.jpg",
-  bio: "Pursuing a Bachelor of Science in Computer Science at Murang'a University of Technology. A versatile, tech-driven professional combining full stack development expertise with strong foundations in networking, Cisco administration, and desktop publishing.",
+  bio: "Pursuing a Bachelor of Science in Computer Science at Murang'a University of Technology. A versatile, tech-driven professional combining full-stack and mobile development expertise with strong foundations in Cisco networking, computer hardware maintenance, systems troubleshooting, and desktop publishing.",
   githubUrl: "https://github.com/gachemadavid448", // inferred from email
   linkedinUrl: "https://linkedin.com",
 };
@@ -25,27 +25,43 @@ export const education = {
 
 export const certificates: Certificate[] = [
   {
+    id: "cisco-networking",
+    title: "Cisco Networking Certificate",
+    issuer: "Cisco Networking Academy",
+    date: "2025",
+    description: "Certified competence in IP subnetting, routing protocols (OSPF, RIP), switching mechanics, VLANs, ACLs, and network infrastructure design.",
+    type: 'cisco'
+  },
+  {
+    id: "comp-troubleshooting",
+    title: "Computer Maintenance & Troubleshooting",
+    issuer: "Cisco Networking Academy / IT Essentials",
+    date: "2024",
+    description: "Certified expertise in diagnostic troubleshooting, hardware configuration, operating systems installation (Windows/Linux), and hardware security protocols.",
+    type: 'cisco'
+  },
+  {
+    id: "fullstack-dev-cert",
+    title: "Full Stack Web Development Certificate",
+    issuer: "Cisco Networking Academy Program",
+    date: "2025",
+    description: "Full-stack software engineering certification covering web technologies, robust APIs, Node.js runtime, relational databases, and secure authentication flows.",
+    type: 'cisco'
+  },
+  {
+    id: "mobile-app-dev-cert",
+    title: "Mobile App Development & Architecture",
+    issuer: "Cisco Partner Academy / Tech-Minds",
+    date: "2025",
+    description: "Specialized certification in cross-platform mobile app development with React Native, state management, offline database storage, and push notification architectures.",
+    type: 'cisco'
+  },
+  {
     id: "js-essentials-3",
     title: "JavaScript Essentials 3 (Advanced)",
     issuer: "Cisco Networking Academy",
     date: "2025",
     description: "Advanced JavaScript development, object-oriented programming, asynchronous JS, APIs, design patterns, and application architecture.",
-    type: 'cisco'
-  },
-  {
-    id: "js-essentials-2",
-    title: "JavaScript Essentials 2 (Intermediate)",
-    issuer: "Cisco Networking Academy",
-    date: "2025",
-    description: "Scope, closures, DOM manipulation, event handling, prototypes, and intermediate web application structures.",
-    type: 'cisco'
-  },
-  {
-    id: "js-essentials-1",
-    title: "JavaScript Essentials 1 (Foundations)",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    description: "Core JS concepts including variables, operators, control flow, functions, arrays, and basic programming logic.",
     type: 'cisco'
   },
   {
@@ -75,32 +91,39 @@ export const packagesList = [
 
 export const skills: Skill[] = [
   {
-    name: "Full Stack Development",
+    name: "Full Stack Web Development",
     category: "Full Stack",
-    level: 90,
+    level: 92,
     icon: "Layers",
-    details: ["React / Vite / Next.js", "Node.js / Express", "TypeScript & ES6+ JavaScript", "SQL & NoSQL Databases (Drizzle, MongoDB)"]
+    details: ["React / Vite / Next.js", "Node.js / Express / APIs", "TypeScript & ES6+ JavaScript", "SQL & NoSQL (PostgreSQL, MongoDB)"]
   },
   {
-    name: "Cisco Networking",
-    category: "Networking",
-    level: 85,
-    icon: "Network",
-    details: ["Routing & Switching", "VLAN & Subnetting", "Network Topology Design", "Cisco Packet Tracer / GNS3 Simulation"]
-  },
-  {
-    name: "Internet & System Admin",
-    category: "Internet Admin",
+    name: "Mobile App Development",
+    category: "Mobile Development",
     level: 88,
+    icon: "Smartphone",
+    details: ["React Native & Expo", "Flutter & Dart", "Mobile UI/UX Optimization", "Offline Persistence & Sync"]
+  },
+  {
+    name: "Cisco Networking & Routing",
+    category: "Networking",
+    level: 90,
+    icon: "Network",
+    details: ["Routing & Switching", "VLAN & Subnetting", "Network Topology Design", "Cisco Packet Tracer Simulations"]
+  },
+  {
+    name: "Computer Maintenance",
+    category: "Internet Admin",
+    level: 89,
     icon: "Globe",
-    details: ["Server Configuration", "Domain & DNS Mapping (Namecheap/Cloudflare)", "Cloud Deployment (Vercel, Railway, Render)", "Security & Firewall Policies"]
+    details: ["Hardware Troubleshooting", "OS Installation (Linux/Windows)", "Network Interface Configuration", "Security & System Hardening"]
   },
   {
     name: "Professional Office Suites",
     category: "Office Suites",
     level: 100,
     icon: "Monitor",
-    details: ["Advanced MS Excel Sheets & Formulas", "Database Management with MS Access", "Desktop Publishing & Material Layout", "Operating System Maintenance & Security"]
+    details: ["Advanced MS Excel & Macros", "MS Access Database Queries", "Desktop Publishing Layouts", "Operating System Maintenance"]
   }
 ];
 

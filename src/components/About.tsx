@@ -47,7 +47,7 @@ export default function About() {
             }`}
           >
             <ShieldCheck className="h-4 w-4" />
-            <span>Cisco JS Badges</span>
+            <span>Professional Certs</span>
           </button>
 
           <button

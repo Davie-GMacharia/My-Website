@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Network, Globe, Monitor, CheckCircle2 } from 'lucide-react';
+import { Layers, Network, Globe, Monitor, CheckCircle2, Smartphone } from 'lucide-react';
 import { skills } from '../data';
 
 export default function Skills() {
@@ -13,6 +13,8 @@ export default function Skills() {
         return <Globe className="h-5 w-5 text-cyan-400" />;
       case 'Monitor':
         return <Monitor className="h-5 w-5 text-pink-400" />;
+      case 'Smartphone':
+        return <Smartphone className="h-5 w-5 text-emerald-400" />;
       default:
         return <Layers className="h-5 w-5 text-violet-400" />;
     }

@@ -10,7 +10,7 @@ export interface Certificate {
 
 export interface Skill {
   name: string;
-  category: 'Full Stack' | 'Networking' | 'Internet Admin' | 'Office Suites';
+  category: 'Full Stack' | 'Networking' | 'Internet Admin' | 'Office Suites' | 'Mobile Development';
   level: number; // 0 to 100
   icon: string; // Lucide icon name
   details: string[];
